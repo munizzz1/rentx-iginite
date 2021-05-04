@@ -6,8 +6,11 @@ import swaggerFile from '../../../swagger.json'
 
 import { router } from '@shared/infra/http/routes';
 import { AppError } from '@shared/errors/AppError';
-import '@shared/infra/typeorm';
+
+import createConnectionDatabase from '@shared/infra/typeorm';
 import '@shared/container';
+
+createConnectionDatabase();
 
 const app = express();
 app.use(express.json());
