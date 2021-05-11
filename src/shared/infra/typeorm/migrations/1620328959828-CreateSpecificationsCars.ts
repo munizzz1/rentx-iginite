@@ -39,7 +39,7 @@ export class CreateSpecificationsCars1620328959828 implements MigrationInterface
             referencedColumnNames: ['id'],
             columnNames: ['car_id'],
             onDelete: 'SET NULL',
-            onUpdate: 'SET NULL'
+            onUpdate: 'SET NULL',
         }));
     }
 
