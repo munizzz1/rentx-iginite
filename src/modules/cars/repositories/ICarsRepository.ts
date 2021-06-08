@@ -7,6 +7,7 @@ interface ICarsRespository {
     finByLicensePlate(license_plate: string): Promise<Car>;
     findAvailable(data: IFindCarsDTO): Promise<Car[]>;
     findById(id: string): Promise<Car>;
+    updateAvailable(id: string, available: boolean): Promise<void>;
 }
 
 export { ICarsRespository };
