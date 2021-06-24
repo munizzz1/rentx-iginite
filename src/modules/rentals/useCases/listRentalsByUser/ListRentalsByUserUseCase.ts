@@ -3,7 +3,7 @@ import { inject, injectable } from "tsyringe";
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
 import { Rental } from "@modules/rentals/infra/typeorm/entities/Rental";
 
-injectable()
+@injectable()
 class ListRentalsByUserUseCase {
     constructor (
         @inject('RentalsRepository')
