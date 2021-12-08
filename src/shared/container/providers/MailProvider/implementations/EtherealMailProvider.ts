@@ -1,9 +1,11 @@
 import nodemailer, { Transporter } from 'nodemailer';
+import { injectable } from 'tsyringe';
 import handlebars from 'handlebars';
 import fs from 'fs';
 
 import { IMailProvider } from "../IMailProvider";
 
+@injectable()
 class EtherealMailProvider implements IMailProvider {
     private client: Transporter;
 
